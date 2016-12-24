@@ -3,6 +3,7 @@
 Created on Sat Oct 22 22:58:56 2016
 Python 2.7 - Spyder
 @author: Zhong (Michael) Zeng
+from Forhdam University
 """
 
 import numpy as np
