@@ -2,7 +2,8 @@
 """
 Created on Sat Dec 10 11:55:21 2016
 
-@author: Michael, Zeng
+@author: Zhong (Michael) Zeng
+from Fordham University
 """
 # This file was tested on Dec 15, 2016, Thursday. 
 # It ran w/t error if csv files 'asset.csv' and 'factor.csv' are provided. 
@@ -16,7 +17,7 @@ import matplotlib.pyplot as plt
 # from pandas.stats.api import ols # to be removed in a future release
 
 # Set path of modified csv files (change cell format in xlsx and save as csv)
-path = 'C:\Users\zzeng\Downloads\Calculation\\'
+path = 'F:\Michael\Fordham_University\Taken\Quant_Mtd_Ptfl_Mgt\Team Project\Calculation\\'
 file_asset = 'asset.csv'
 file_factor = 'factor.csv'
 # file_summary_each = 'rg_summary_each.txt'
@@ -141,5 +142,8 @@ t_sta.columns = col_name_ast
 p_val.columns = col_name_ast
 
 # Plot
+plt.matshow(para_val) # plot coefficients of the regression
+plt.matshow(p_val) # plot p-value of coefficients of the regression
+plt.matshow(corr_fct) # plot correlation among 26 factors
 
-
+plt.show()
